@@ -1,10 +1,15 @@
 const express = require('express');
 const studentRoutes = require('./routes/studentRoutes');
+const internshipRoutes = require('./routes/internshipRoutes');
+const applicationRoutes = require('./routes/applicationRoutes');
+const { requestLogger } = require('./middleware/loggerMiddleware');
 const { notFoundHandler, errorHandler } = require('./middleware/errorMiddleware');
 
 const app = express();
 
-// Middleware: parse incoming JSON bodies into req.body.
+// Middleware runs in this order for every request:
+// logger -> JSON parser -> routes -> (not found) -> (error handler)
+app.use(requestLogger);
 app.use(express.json());
 
 // Health check route: lets us (and later, other services) confirm the API is alive.
@@ -15,8 +20,10 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Every URL starting with /api/students is handled by studentRoutes.
+// Every URL starting with /api/students is handled by studentRoutes (same idea for the others).
 app.use('/api/students', studentRoutes);
+app.use('/api/internships', internshipRoutes);
+app.use('/api/applications', applicationRoutes);
 
 // ORDER MATTERS: these two must come after all routes.
 app.use(notFoundHandler);

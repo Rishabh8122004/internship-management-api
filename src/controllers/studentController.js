@@ -1,13 +1,8 @@
 const AppError = require('../utils/AppError');
-const { parseId } = require('../utils/validation');
+const { parseId, sameText } = require('../utils/validation');
 const { validateStudentInput } = require('../utils/studentValidator');
 const studentModel = require('../models/studentModel');
 
-// Case-insensitive text comparison, so ?course=cse matches "CSE".
-// String() protects us if someone sends ?course=a&course=b (which becomes an array).
-function sameText(a, b) {
-  return String(a).toLowerCase() === String(b).toLowerCase();
-}
 
 // GET /api/students   (optional filters: ?course= &college= &graduationYear= &skill=)
 function getStudents(req, res) {
