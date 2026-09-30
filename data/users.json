@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Test User",
+    "email": "test@example.com",
+    "passwordHash": "$2b$10$dxgs2JL3aK4d.DJJ/280QeJKWuKcDUdB.ZIW4r0ST1P6dbnM1wZje"
+  },
+  {
+    "id": 2,
+    "name": "Test User",
+    "email": "user1790771643989@example.com",
+    "passwordHash": "$2b$10$5Y6OFqJC0u1QmNVuceM.XO5bL9xscmEhd8K1LFIMbCvT3WxN6gDIe"
+  },
+  {
+    "id": 3,
+    "name": "Test User",
+    "email": "user1790772552512@example.com",
+    "passwordHash": "$2b$10$xxDrf1yoV2bSgXzFEK8hzurmgDOMUNKcO3QrJrbE0ymYVdY50VFN2"
+  },
+  {
+    "id": 4,
+    "name": "Test User",
+    "email": "user1790772886286@example.com",
+    "passwordHash": "$2b$10$Hx4I3H5ArLJf4KM0UvhXmONsL94QaNiX5UJiFNHQG4P16MTAn9gs6"
+  },
+  {
+    "id": 5,
+    "name": "Test User",
+    "email": "user1790773201915@example.com",
+    "passwordHash": "$2b$10$8ZD6mW6kd1Od6Nv7oHjpl.FOur6ZvKI7/6xRO6fmkW2dlzIbq2rQu"
+  },
+  {
+    "id": 6,
+    "name": "Test User",
+    "email": "user1790773238016@example.com",
+    "passwordHash": "$2b$10$OxulM9NqDcRH/SXm6hdtseZJM3LVZ9ZEuJVT/qikyvUT1rNEh1mZG"
+  }
+]

@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "phone": "9876543210",
+    "college": "ABC Institute of Technology",
+    "course": "CSE",
+    "graduationYear": 2027,
+    "skills": [
+      "C++",
+      "Python",
+      "React"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Neha Verma",
+    "email": "neha@example.com",
+    "phone": "9123456780",
+    "college": "ABC Institute of Technology",
+    "course": "ECE",
+    "graduationYear": 2026,
+    "skills": [
+      "Embedded C"
+    ]
+  }
+]

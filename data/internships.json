@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Full Stack Developer Intern",
+    "domain": "Full Stack Development",
+    "duration": "8 weeks",
+    "description": "Build and ship features for a React and Node.js web app.",
+    "skillsRequired": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "mode": "Remote",
+    "status": "Open"
+  },
+  {
+    "id": 2,
+    "title": "Python Developer Intern",
+    "domain": "Python",
+    "duration": "6 weeks",
+    "description": "Write Python scripts and small backend services.",
+    "skillsRequired": [
+      "Python",
+      "SQL"
+    ],
+    "mode": "Hybrid",
+    "status": "Open"
+  },
+  {
+    "id": 3,
+    "title": "Data Analyst Intern",
+    "domain": "Data Analytics",
+    "duration": "10 weeks",
+    "description": "Clean data, build dashboards and report insights.",
+    "skillsRequired": [
+      "Python",
+      "Excel",
+      "SQL"
+    ],
+    "mode": "Remote",
+    "status": "Closed"
+  }
+]

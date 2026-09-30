@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": 1,
+    "studentId": 1,
+    "internshipId": 1,
+    "applicationDate": "2026-09-29",
+    "status": "Selected"
+  },
+  {
+    "id": 2,
+    "studentId": 2,
+    "internshipId": 1,
+    "applicationDate": "2026-09-20",
+    "status": "Under Review"
+  }
+]
