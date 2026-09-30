@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 const studentRoutes = require('./routes/studentRoutes');
@@ -9,9 +10,13 @@ const { notFoundHandler, errorHandler } = require('./middleware/errorMiddleware'
 
 const app = express();
 
+// Only these frontend origins may read our responses in a browser.
+const allowedOrigins = (process.env.CLIENT_ORIGIN || 'http://localhost:5173').split(',');
+
 // Middleware runs in this order for every request:
-// logger -> JSON parser -> routes -> (not found) -> (error handler)
+// logger -> CORS -> JSON parser -> routes -> (not found) -> (error handler)
 app.use(requestLogger);
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 // Health check route: lets us (and later, other services) confirm the API is alive.
